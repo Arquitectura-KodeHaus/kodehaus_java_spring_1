@@ -1,0 +1,6 @@
+<div style="padding:1rem;max-width:640px;margin:auto">
+  <h2>Health Check</h2>
+  <button (click)="check()">Ping /healthz</button>
+  <p *ngIf="result() as r">Respuesta: {{ r }}</p>
+</div>
+<router-outlet></router-outlet>
